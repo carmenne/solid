@@ -1,15 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model Solid.Models.Customers
 
-<html>
-<body>
-  <table>
-    <tr>
-      <td>Hi</td>
-    </tr>
-  </table>
-</body>
-</html>
+<form action="Search/Result" method="get">
+  <label>Search Criteria</label>
+  <input type="text" />
+  <label>Search By</label>
+  <select>
+    <option>Customer Name</option>
+    <option>Contact Name</option>
+    <option>Country</option>
+  </select>
+  <input type="submit" value="Submit"/>
+</form>

@@ -1,13 +1,11 @@
-﻿@model Solid.Models.Customers
-
-<form action="Search/Result" method="get">
+﻿<form action="Search/Result" method="get">
   <label>Search Criteria</label>
-  <input type="text" />
+  <input name="criteria" type="text" />
   <label>Search By</label>
-  <select>
-    <option>Customer Name</option>
-    <option>Contact Name</option>
-    <option>Country</option>
+  <select name="searchby">
+    <option>@Helpers.Search.CompanyName</option>
+    <option>@Helpers.Search.ContactName</option>
+    <option>@Helpers.Search.Country</option>
   </select>
   <input type="submit" value="Submit"/>
 </form>
